@@ -1,0 +1,5 @@
+{
+  "imports": {
+    "animejs": "./animejs.js"
+  }
+}
