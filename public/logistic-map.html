@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Logistic map</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <canvas id="app"></canvas>
+
+    <div class="controls">
+      <div class="control-group">
+        <div class="control">
+          <label for="rconst" data-format="𝒓 = {}">𝒓</label>
+          <input
+            type="range"
+            id="rconst"
+            min="0"
+            max="4"
+            step="0.01"
+            value="3"
+            disabled
+          />
+        </div>
+        <div class="control">
+          <label for="xconst" data-format="𝒙<sub>1</sub> = {}"
+            >𝒙<sub>1</sub></label
+          >
+          <input type="range" id="xconst" min="0" max="1" step="0.01" />
+        </div>
+      </div>
+      <div class="control-group">
+        <span>𝑥<sub>𝑛+1</sub> = 𝑟𝑥<sub>𝑛</sub> (1 - 𝑥<sub>𝑛</sub>)</span>
+      </div>
+      <div class="control-group">
+        <button id="plot4">Plot ⨯100 for each 𝒓</button>
+      </div>
+    </div>
+
+    <script src="dist/logistic-map/index.js" type="module"></script>
+  </body>
+</html>

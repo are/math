@@ -1,0 +1,29 @@
+.controls {
+  position: fixed;
+  top: 32px;
+  left: 32px;
+
+  display: flex;
+}
+
+.control-group {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  margin: 0 16px;
+}
+
+.control {
+  display: flex;
+}
+
+.control label {
+  margin-right: 16px;
+}
+
+.control label[for='xconst'] {
+  margin-right: 9px;
+}

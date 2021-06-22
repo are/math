@@ -38,35 +38,26 @@ class Ball {
       .perpendicular(value >= 0)
       .norm()
       .times(Math.abs(value) * 10 * this.velocity.magnitude())
-    // f
 
-    //   .norm()
-    //   .times(this.velocity.magnitude())
-
-    // this.velocity = f
     this.addForce(f)
 
     if (this.position.x < 0) {
       this.position.x = 0
-      // this.forces = []
       this.addForce(v.ec((-this.velocity.x / dt) * 2, 0))
     }
 
     if (this.position.x > canvas.width) {
       this.position.x = canvas.width
-      // this.forces = []
       this.addForce(v.ec((-this.velocity.x / dt) * 2, 0))
     }
 
     if (this.position.y < 0) {
       this.position.y = 0
-      // this.forces = []
       this.addForce(v.ec(0, (-this.velocity.y / dt) * 2))
     }
 
     if (this.position.y > canvas.height) {
       this.position.y = canvas.height
-      // this.forces = []
       this.addForce(v.ec(0, (-this.velocity.y / dt) * 2))
     }
 
